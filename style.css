@@ -42,7 +42,6 @@ img
     margin-left:auto;
     margin-right:auto;
     width:700px;
-    height:1000px;
     display:flex;
     flex-direction: column;
 
@@ -69,6 +68,11 @@ img
 {
     border:1px solid purple;
     background: #9b4f97;
+}
+
+.CPlus-panel
+{
+    background:#649ad2;
 }
 
 /* Grid Container */
