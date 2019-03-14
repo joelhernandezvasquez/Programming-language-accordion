@@ -181,16 +181,20 @@
 // Applying event delegation
 
   const panel = document.querySelector(".main-container");
-  const content = document.querySelector(".content");
-
+ 
   panel.addEventListener("click",e=>
   {
-     if(e.target.matches("div"))
-     {
+      if(e.target.matches("div"))
+      {
+       const parent = e.target;
+        const next = parent.firstElementChild;
+       const arrow = next.nextElementSibling;
+       const content = arrow.nextElementSibling;
+      content.classList.toggle("open-panel");
+      arrow.classList.toggle("animation-arrow");
       
-     }
+      }
   });
-
 </script>
 
 </body>

@@ -16,6 +16,7 @@ img
     float:right;
     padding:5px;
     margin-right:10px;
+    
 }
 .heading
 {
@@ -27,9 +28,9 @@ img
 
 .paragraphs
 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color:black;
-    line-height: 1.4;
+    line-height: 1.3;
     padding:10px;
     margin:0;
 }
@@ -58,11 +59,6 @@ img
     
     
 }
-.open-panel.panel
-{
-    height:500px;
-}
-
 
 .javascript-panel
 {
@@ -98,6 +94,8 @@ img
     grid-template-areas:
     "logo text-content";
      overflow: hidden;
+     height:0px;
+     transition:height 0.4s ease-out;
 }
 
 .logo
@@ -114,8 +112,18 @@ img
     grid-area:text-content;
   
 }
+
+
 .open-panel.content
 {
-    height:250px;
+    height:400px;
+    
 }
 
+
+/* Animation  */
+
+.animation-arrow
+{
+    transform: rotate(-180deg);
+}
