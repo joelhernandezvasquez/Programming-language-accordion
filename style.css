@@ -1,4 +1,121 @@
-body
+
+
+img
 {
-    background:red;
+    width:250px;
+    margin-left:10px;
 }
+
+
+
+/* Generic classes */
+
+.arrow
+{
+    width:50px;
+    float:right;
+    padding:5px;
+    margin-right:10px;
+}
+.heading
+{
+  font-size:2.5rem;
+  font-weight:800;
+  margin-left:20px;
+  
+}
+
+.paragraphs
+{
+    font-size: 1.6rem;
+    color:black;
+    line-height: 1.4;
+    padding:10px;
+    margin:0;
+}
+
+/* Layout  */
+
+.main-container
+{
+   
+   
+    margin-left:auto;
+    margin-right:auto;
+    width:700px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+ /* Panels */
+
+
+.panel
+{
+    width:100%;
+    
+    
+}
+.open-panel.panel
+{
+    height:500px;
+}
+
+
+.javascript-panel
+{
+   
+    background: #f9db3b;
+}
+
+.Csharp-panel
+{
+    
+    background: #9b4f97;
+}
+
+.CPlus-panel
+{
+    background:#649ad2;
+}
+
+.java-panel
+{
+    background:#037497;
+}
+
+/* Grid Container */
+
+.content
+{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows:340px;
+    grid-gap:5px;
+    grid-template-areas:
+    "logo text-content";
+     overflow: hidden;
+}
+
+.logo
+
+{
+    grid-area:logo;
+    display:flex;
+    align-items: flex-start;
+  
+}
+
+.text-content
+{
+    grid-area:text-content;
+  
+}
+.open-panel.content
+{
+    height:250px;
+}
+
